@@ -1,15 +1,11 @@
 import React from 'react'
+import Navigation from './components/Navigation'
 
 function Detail() {
     return (
-        <header>
-            <nav>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-            </nav>
-        </header>
+        <div>
+            <Navigation navList={[]} onClickNavItem={() => {}}/>
+        </div>
     )
 }
 
