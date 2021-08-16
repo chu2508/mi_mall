@@ -7,7 +7,7 @@ export default function useListenScroll(
   useEffect(() => {
     const ele = ref.current;
     const callFun = (e: Event) =>
-      callback((e.currentTarget as HTMLElement)?.scrollTop);
+      callback((e.target as any)?.scrollY);
     ele?.addEventListener("scroll", callFun);
     return () => {
       ele?.removeEventListener("scroll", callFun);
